@@ -10,13 +10,10 @@ def pingout(i):
     """
 
     if i % 3 == 0 and i % 5 == 0:
-        # print(i)
         return "SCAN_FOR_TOWERS"
     elif i % 3 == 0:
-        # print(i)
         return "CHECK_SIGNAL_STRENGTH"
     elif i % 5 == 0:
-        # print(i)
         return "CHECK_CHANNEL_NOISE"
     return i
 
