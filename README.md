@@ -23,7 +23,7 @@ git clone https://github.com/yvonneyeh/fizzbuzz.git
 python3 pingout.py
 ```
 
-4. To execute unit-tests:
+3. To execute unit-tests, run the following in your terminal:
 ```shell
 python3 tests.py
 ```
