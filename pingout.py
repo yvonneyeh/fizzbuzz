@@ -8,14 +8,16 @@ def pingout(i):
     Returns:
         THX-1138 message
     """
-
-    if i % 3 == 0 and i % 5 == 0:
+    if i == 1:
+        return "PING"
+    elif i % 3 == 0 and i % 5 == 0:
         return "SCAN_FOR_TOWERS"
     elif i % 3 == 0:
         return "CHECK_SIGNAL_STRENGTH"
     elif i % 5 == 0:
         return "CHECK_CHANNEL_NOISE"
-    return i
+    else:
+        return "PING"
 
 
 def main():

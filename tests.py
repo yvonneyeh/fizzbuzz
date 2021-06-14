@@ -3,6 +3,12 @@ from pingout import pingout
 
 
 class TestPingout(unittest.TestCase):
+
+    def test_first_check(self):
+            i = 1
+            print('Testing:', i)
+            assert pingout(i) == "PING"
+            
     def test_check_signal_strength(self):
         for i in [3, 6, 9, 18]:
             print('Testing:', i)
