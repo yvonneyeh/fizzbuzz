@@ -5,9 +5,9 @@ from pingout import pingout
 class TestPingout(unittest.TestCase):
 
     def test_first_check(self):
-            i = 1
-            print('Testing:', i)
-            assert pingout(i) == "PING"
+        i = 1
+        print('Testing:', i)
+        assert pingout(i) == "PING"
 
     def test_check_signal_strength(self):
         for i in [3, 6, 9, 18]:
@@ -23,6 +23,11 @@ class TestPingout(unittest.TestCase):
         for i in [15, 30, 75]:
             print('Testing:', i)
             assert pingout(i) == "SCAN_FOR_TOWERS"
+
+    def test_check_not_int(self):
+        i = 'test'
+        print('Testing', i)
+        assert pingout(i) == "NOT_INT"
 
 if __name__ == '__main__':
     unittest.main()
