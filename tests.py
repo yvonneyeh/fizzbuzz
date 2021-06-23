@@ -8,7 +8,7 @@ class TestPingout(unittest.TestCase):
             i = 1
             print('Testing:', i)
             assert pingout(i) == "PING"
-            
+
     def test_check_signal_strength(self):
         for i in [3, 6, 9, 18]:
             print('Testing:', i)
